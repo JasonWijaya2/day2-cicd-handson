@@ -16,8 +16,8 @@ on:
   # Case D: saat ada tag versi (mis. v1.2.0) -> cocok untuk release
   # (dipisah karena push tag beda dari push branch)
   # Aktifkan dengan menaruh di push.tags jika perlu:
-   push:
-    tags: ['v*.*.*']
+  #    push:
+  #     tags: ['v*.*.*']
 
   # Case E: terjadwal (cron) — "nightly build"
   schedule:
