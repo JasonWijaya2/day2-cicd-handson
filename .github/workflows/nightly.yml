@@ -1,0 +1,13 @@
+name: Nightly
+
+on:
+  schedule:
+    - cron: '0 22 * * *'
+  workflow_dispatch: {}
+
+jobs:
+  nightly-ci:
+    uses: ./.github/workflows/reusable-node.yml   # <-- panggil reusable workflow
+    with:
+      node-version: '20'
+      run-lint: true
