@@ -8,6 +8,7 @@ on:
     paths:
       - 'src/**'
       - 'package.json'
+    tags: ['v*.*.*']
 
   # Case C: setiap PR menuju main
   pull_request:
